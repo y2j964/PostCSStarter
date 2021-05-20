@@ -14,9 +14,9 @@
     "postcss-nested": "^5.0.5"
   },
   "scripts": {
-    "dev": "npm-run-all devServer css",
     "css": "postcss src/css/main.css -o src/main.css -w",
-    "devServer": "http-server src/index.html"
+    "devServer": "live-server --open='/src'",
+    "dev": "npm run devServer & npm run css"
   },
   "author": "Justin Mooney",
   "license": "ISC"
